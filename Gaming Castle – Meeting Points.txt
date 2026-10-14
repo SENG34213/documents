@@ -1,0 +1,45 @@
+# Gaming Castle – Meeting Points
+
+## Previous Meeting Points
+
+1. Some error codes are defined but not currently used. Review and identify where they should be applied.
+2. Review the Booking Service APIs and implement proper exception handling.
+3. Discuss the payment integration approach with Kirisi.
+4. Configure payment processing within the Create Booking API and confirm the booking after successful payment.
+5. Discuss ideas for displaying available booking slots.
+   - `GET /api/bookings/availability?date=X&time=Y` — Done
+   - `GET /api/admin/bookings/availability` — Done
+   - `POST /api/admin/bookings` — Create a walk-in booking using booking details and `type=WALKIN`.
+   - Proposed idea: Display available time slots for an entire month.
+6. Decide whether the booking amount should be included in the booking confirmation email.
+
+## Next Meeting Points
+
+1. Implement an API in the Booking Service to allow administrators to add gaming stations. — Done
+2. Decide whether the booking amount should be included in the booking confirmation email. — Done
+3. Determine whether walk-in customers must be registered users.
+   - Decision: Customers must be registered so the frontend can display and select their details when creating a booking.
+   - Discuss how to handle walk-in customers who are not registered.
+4. Allow bookings to be rescheduled or cancelled at least two hours before the scheduled time. — Done
+5. Implement refunds for cancelled bookings.
+6. Send an email notification when a user account is deactivated. — Done
+
+## Meeting Points – October 5, 2026
+
+1. Discuss the implementation of the Loyalty Points Service.
+2. Integrate Swagger documentation across all services. — Done
+3. Implement pagination for the Get All Bookings API. — Done
+
+## Tournament Service
+
+1. Send notifications to registered tournament participants two hours before the tournament, including group details. — Done
+2. Send email notifications to all registered participants when an administrator cancels a tournament. — Done
+
+## Meeting Points – October 12, 2026
+
+1. Convert all time-related operations to the Sri Lanka time zone.
+2. Discuss the frontend foundation and its implementation.
+3. Implement functionality that allows administrators to create loyalty point rules.
+4. Complete Kirisi payment integration testing within two to three days.
+5. Thivya to implement all login, registration, and password-reset-related pages.
+6. Display available time slots and their corresponding dates and times when a user selects a gaming station.
